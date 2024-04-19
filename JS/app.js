@@ -76,7 +76,7 @@ $(document).ready(function() {
 
     /* changing feature for homepage */
     const options = {
-        strings: ['Student', 'Software Engineer', 'Web Developer', "BackEnd Developer"  ],
+        strings: ['Student', 'Software Engineer', 'Web Developer', "BackEnd Programmer"  ],
         typeSpeed: 75,
         backSpeed: 75,
         backdelay: 4000,
