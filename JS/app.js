@@ -17,6 +17,16 @@ $(document).ready(function() {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('.navbar a')
 
+    window.onload = () => {
+        // Set only 'Home' as active on page load
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#home') {
+                link.classList.add('active');
+            }
+        });
+    };
+
 
     window.onscroll = () => {
         sections.forEach(sec => {
@@ -76,7 +86,7 @@ $(document).ready(function() {
 
     /* changing feature for homepage */
     const options = {
-        strings: ['Student', 'Software Engineer', 'Web Developer', "BackEnd Programmer"  ],
+        strings: ['Software Engineer', 'BackEnd Developer', 'Linux Programmer', 'Web Developer'],
         typeSpeed: 75,
         backSpeed: 75,
         backdelay: 4000,
